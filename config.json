@@ -1,0 +1,6 @@
+{
+    "base_url": "http://api.football-data.org/v2/competitions/",
+    "email": "teemu415@gmail.com",
+    "api_token": "30372f5075a74cdca065454df869f43a",
+    "user_agent": "MyDataIntegrationApp/1.0.0 Singer.io Tap for Soccer"
+}
