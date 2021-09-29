@@ -4,7 +4,7 @@ from typing import Any, Dict, Optional, Iterable
 
 from singer_sdk.streams import RESTStream
 from singer_sdk.authenticators import APIAuthenticatorBase, SimpleAuthenticator
-from singer_sdk import (
+from singer_sdk.helpers._typing import (
     Property,
     PropertiesList,
     StringType,

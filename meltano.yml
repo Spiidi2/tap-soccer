@@ -1,26 +1,23 @@
 version: 1
 send_anonymous_usage_stats: true
-project_id: tap-soccer
+project_id: 4b135e43-cbfb-4fa2-ada7-6560bd2fbb3c
 plugins:
   extractors:
   - name: tap-soccer
     namespace: tap-soccer
-    # TODO: To test using Meltano, replace with absolute path
-    #       to the tap-soccer.sh script:
     executable: ./tap-soccer.sh
     capabilities:
     - state
     - catalog
     - discover
-    config:
-      start_date: '2010-01-01T00:00:00Z'
     settings:
-    # TODO: To configure using Meltano, declare settings and their types here:
     - name: username
     - name: password
       kind: password
     - name: start_date
       value: '2010-01-01T00:00:00Z'
+    config:
+      start_date: '2010-01-01T00:00:00Z'
   loaders:
   - name: target-jsonl
     variant: andyh1203
